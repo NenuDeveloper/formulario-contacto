@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/scaffold.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Formulario de Contacto</title>
+    <!-- InstanceEndEditable -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	  
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	  <link href="css/app.css" rel="stylesheet" type="text/css">
+	  <script src="js/bootstrap-4.0.0.js"></script>
+	  <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+  </head>
+  <body>
+	  
+    <div id="app">
+		<!-- InstanceBeginEditable name="EditRegionBody" -->
+		<nav class="navbar navbar-dark bg-primary justify-content-center">
+  			<span class="navbar-brand mb-0 h1">Formulario de contacto</span>
+		</nav>
+		<section id="Form" class="container">
+		  <form class="jumbotron mt-md-5" action="/" method="post">
+			  	<h2 class="text-center mb-2">Contáctanos</h2>
+			  	<p class="text-center mb-5 text-muted">Cuentanos tu <span class="text-danger">idea</span></p>
+			  	<div class="row">
+					<div class="col-md-4 mb-3">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-white">
+									<i class="fas fa-signature"></i>
+								</span>
+							</div>
+							<input type="text" id="name" name="name" class="form-control" placeholder="Nombre" required>
+						</div>
+					</div>
+			  		<div class="col-md-4 mb-3">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-white">
+									<i class="far fa-envelope"></i>
+								</span>
+							</div>
+							<input type="email" id="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-white">
+									<i class="fas fa-phone"></i>
+								</span>
+							</div>
+							<input type="tel" id="phone" name="phone" class="form-control"
+       						pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required placeholder="55-XX-XX-XX-XX">
+							
+						</div>
+					</div>
+			  	</div>
+			  	<div class="row mb-5">
+			  		<div class="col-md-12 mb-3">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-white">
+									<i class="fas fa-comment"></i>
+								</span>
+						</div>
+						<textarea required name="message" id="message" class="form-control" placeholder="Tu mensaje"></textarea>
+						</div>
+						
+					</div>
+			  	</div>
+			  <div class="row">
+				  <div class="col-md-6">
+				  	<div class="g-recaptcha" data-sitekey="6LeQEI0UAAAAAAKtYruZr_M4ymtGLUtuFOqGw6YP"></div>
+				  </div>
+			  	<div class="col-md-6">
+				  <button type="submit" class="btn btn-warning float-right">Enviar</button>
+				  </div>
+			  </div>
+			  
+		  </form>
+        </section>
+        <!-- InstanceEndEditable -->
+	</div>
+  <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © 2019. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    
+  </body>
+<!-- InstanceEnd --></html>
